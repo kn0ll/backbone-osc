@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#toolbar {
+    height: 100%;
+    position: fixed;
+    width: 200px;
+    font-size: 12px;
+}
+
+#stage {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 200px;
+}
+
+/* json edit form */
+
+form div {
+    margin-bottom: 5px;
+}
+
+    form > div > * {
+        float: left;
+    }
+
+    form input[type="text"] {
+        border: 0;
+        font-size: 13px !important;
+        padding: 3px;
+        -webkit-border-radius: 3px;
+    }
+
+form label {
+    line-height: 19px;
+    font-size: 13px !important;
+    padding: 3px;
+}
+    
+
+.component {
+    padding: 8px;
+    -webkit-border-radius: 10px;
+    display: inline-block;
+    background: #ccc;
+    margin: 5px;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+
+.component[data-type="Unit"] {
+    padding: 15px;
+    min-width: 100px;
+    min-height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(62%,#0e0e0e)); 
+}
+
+.component[data-type="Slider"] {
+    
+}
+
+    .component[data-type="Slider"] .slider {
+        margin: 0 auto 10px;
+    }
+    
+    .component[data-type="Slider"] input {
+        border: 0;
+        background: none;
+        text-align: center;
+        display: block;
+        width: 27px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px; font-weight: bold;
+        margin: 0 auto;
+    }
+    
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
