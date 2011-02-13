@@ -28,7 +28,8 @@ var server = Connect.createServer(
             
             var args = data.split('/'),
                 val = args.pop();
-                 
+           
+            console.log(args.join('/') + '/' + val);      
             osc_client.sendSimple(args.join('/'), [val]);
            
         })
