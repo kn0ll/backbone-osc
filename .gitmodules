@@ -1,0 +1,6 @@
+[submodule "lib/node-osc"]
+	path = lib/node-osc
+	url = https://github.com/termie/node-osc.git
+[submodule "static/webroot/js/lib/Socket.IO"]
+	path = static/webroot/js/lib/Socket.IO
+	url = https://github.com/LearnBoost/Socket.IO.git
