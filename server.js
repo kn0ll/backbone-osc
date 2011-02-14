@@ -21,15 +21,14 @@ var server = Connect.createServer(
     }),
     
     Socket(function() { return server }, function (client, req, res) {
-
+        
         var osc_client = new osc.Client(8000, '127.0.0.1');
         
         client.on('message', function(data) {
             
             var args = data.split('/'),
                 val = args.pop();
-           
-            console.log(args.join('/') + '/' + val);      
+                 
             osc_client.sendSimple(args.join('/'), [val]);
            
         })
