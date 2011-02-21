@@ -2,7 +2,7 @@ $(function() {
     
     var socket = new io.Socket();
     socket.connect();
-   
+    
     window.Osc = Backbone.Model.extend({
         
         id: null,

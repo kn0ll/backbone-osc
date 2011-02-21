@@ -1,10 +1,11 @@
 $(function() {
     
     var defaults = {
-        max: 100,
+        max: 1,
         min: 0
     };
 
+    // multiplier for midi (range 
     var $body = $('body'),
         $slider_div = $('<div />').addClass('slider'),
         $input_field = $('<input />').attr('type', 'text').val(0);
@@ -28,6 +29,7 @@ $(function() {
             // init slider
             // change model property on slider change
             $slider.slider($.extend(defaults, {
+                step: .01,
                 orientation: 'vertical',
                 slide: function(e, ui) {
                     model.set({value: ui.value });
@@ -56,6 +58,12 @@ $(function() {
                 .append($slider)
                 .append($input)
                 .appendTo($body);
+            
+            /* init fun mode
+            setInterval(function() {
+                model.set({ value: Math.random() });
+            }, 500);
+            */
             
         },
         
