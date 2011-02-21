@@ -1,4 +1,4 @@
-![what it looks like](http://cl.ly/0q1j1p3V283u0z05242J)
+![what it looks like](http://i.imgur.com/2d5ss.png)
 
 a work in progress. this is what it looks like.
 
