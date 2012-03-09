@@ -1,0 +1,10 @@
+body {
+}
+
+	.components {
+		margin: 50px;
+	}
+
+		.components > * {
+			margin: 20px;
+		}
