@@ -3,6 +3,10 @@
 	"name": "backbone-osc",
 	"dependencies": {
 		"connect": "1.8.5",
-		"socket.io": "0.9.2"
+		"socket.io": "0.9.2",
+		"socket.osc": "0.0.3"
+	},
+	"bin": {
+		"backbone-osc": "./bin/backbone-osc"
 	}
 }
